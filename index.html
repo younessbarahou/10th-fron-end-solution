@@ -14,13 +14,19 @@
 <form >
   <div id="main">
   <h1>Contact Us</h1>
-  <label for="">First Name <span>*</span></label>
- <input id ="fname" type="text">
+  <div id="f-l-name">
+    <div id="div-fname">
+  <label for="fname">First Name <span>*</span></label>
+<input id ="fname" type="text">
  <div class="error">This field is required</div>
-  <label for="">Last Name <span>*</span></label>
+</div>
+  <div id="div-lname">
+  <label for="lname">Last Name <span>*</span></label>
     <input id ="lname" type="text">
     <div class="error">This field is required</div>
-  <label for="">Email Adress <span>*</span></label>
+</div>
+</div>
+  <label for="mail">Email Adress <span>*</span></label>
     <input id="mail" type="text">
     <div class="error">Please Enter a Valid Email</div>
   <label for="">Query Type <span>*</span></label>
@@ -46,5 +52,4 @@
   </div>
   <script src="script.js"></script>
 </body>
-
 </html>
