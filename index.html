@@ -11,39 +11,39 @@
   <title>Frontend Mentor | Contact form</title>
 </head>
 <body>
-<form id="fm" action="/" method="post">
+<form id="fm" >
   <div id="main">
   <h1>Contact Us</h1>
   <div id="f-l-name">
     <div id="div-fname">
   <label for="fname">First Name <span class="easy-span">*</span></label>
-<input oninput="" id ="fname" type="text" class="easy-inpt" >
+<input  id ="fname" type="text" class="easy-inpt" >
  <div class="error">This field is required</div>
 </div>
   <div id="div-lname">
   <label for="lname">Last Name <span class="easy-span">*</span></label>
-    <input oninput="" id ="lname" type="text" class="easy-inpt">
+    <input  id ="lname" type="text" class="easy-inpt">
     <div class="error">This field is required</div>
 </div>
 </div>
   <label for="mail">Email Adress <span>*</span></label>
-    <input  oninput="" id="mail" type="text" >
+    <input   id="mail" type="text" >
     <div class="error-mail">Please Enter a Valid Email</div>
   <label for="">Query Type <span>*</span></label>
   <div id="radio">
-  <div class="radio-1"><input id="inpt-r1" type="radio" name="type"><label class="t1">test 2</label></div>
-  <div class="radio-2"><input id="inpt-r2" type="radio" name="type"><label class="t2">Support Request</label></div>
+  <div class="radio-1"><input id="inpt-r1" class="raddio"type="radio" name="type" ><label class="t1">test 2</label></div>
+  <div class="radio-2"><input id="inpt-r2"class="raddio" type="radio" name="type" ><label class="t2">Support Request</label></div>
 </div>
-<div class="error-check" >Please Select a Query Type </div>
+<div class="error-radio" >Please Select a Query Type </div>
   <label for="msg">Message <span class="easy-span">*</span></label>
-  <textarea oninput="" id="msg" class="easy-inpt"></textarea>
+  <textarea  id="msg" class="easy-inpt"></textarea>
   <div class="error" id="special">This field is required</div>
   <div>
   <input id = "check" type="checkbox">
   <label>I consent to being contacted by the team <span>*</span></label>
   <div class="error-check" id = "special">To submit this form , Please consent to being contacted </div>
 </div>
-<button  type="submit" id="submit">Submit</button></div>
+<button  type="submit" onclick=" empty()" id="submit">Submit</button></div>
 </div>
 </form>
   <div class="attribution">
