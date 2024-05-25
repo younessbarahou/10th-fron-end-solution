@@ -128,7 +128,7 @@ div span{
     transition: 350ms;
 }
 /*  this part is responsible of error hiding/showing , it will be activated using javascript*/
-.error{
+.error,.error-check,.error-mail{
     font-size: 10px;
     margin-top: 5px;
     color: var(--red);

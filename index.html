@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -11,39 +11,39 @@
   <title>Frontend Mentor | Contact form</title>
 </head>
 <body>
-<form >
+<form id="fm" action="/" method="post">
   <div id="main">
   <h1>Contact Us</h1>
   <div id="f-l-name">
     <div id="div-fname">
-  <label for="fname">First Name <span>*</span></label>
-<input id ="fname" type="text">
+  <label for="fname">First Name <span class="easy-span">*</span></label>
+<input oninput="" id ="fname" type="text" class="easy-inpt" >
  <div class="error">This field is required</div>
 </div>
   <div id="div-lname">
-  <label for="lname">Last Name <span>*</span></label>
-    <input id ="lname" type="text">
+  <label for="lname">Last Name <span class="easy-span">*</span></label>
+    <input oninput="" id ="lname" type="text" class="easy-inpt">
     <div class="error">This field is required</div>
 </div>
 </div>
   <label for="mail">Email Adress <span>*</span></label>
-    <input id="mail" type="text">
-    <div class="error">Please Enter a Valid Email</div>
+    <input  oninput="" id="mail" type="text" >
+    <div class="error-mail">Please Enter a Valid Email</div>
   <label for="">Query Type <span>*</span></label>
   <div id="radio">
   <div class="radio-1"><input id="inpt-r1" type="radio" name="type"><label class="t1">test 2</label></div>
   <div class="radio-2"><input id="inpt-r2" type="radio" name="type"><label class="t2">Support Request</label></div>
 </div>
-<div class="error" >Please Select a Query Type </div>
-  <label for="msg">Message <span>*</span></label>
-  <textarea id="msg"></textarea>
+<div class="error-check" >Please Select a Query Type </div>
+  <label for="msg">Message <span class="easy-span">*</span></label>
+  <textarea oninput="" id="msg" class="easy-inpt"></textarea>
   <div class="error" id="special">This field is required</div>
   <div>
   <input id = "check" type="checkbox">
   <label>I consent to being contacted by the team <span>*</span></label>
-  <div class="error"id = special>To submit this form , Please consent to being contacted </div>
+  <div class="error-check" id = "special">To submit this form , Please consent to being contacted </div>
 </div>
-<button id="submit">Submit</button></div>
+<button  type="submit" id="submit">Submit</button></div>
 </div>
 </form>
   <div class="attribution">
