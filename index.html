@@ -8,16 +8,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <title>Frontend Mentor | Contact form</title>
 </head>
 <body>
-<form id="fm" >
-  <div id="main">
+<form>  
+    <div id="main">
   <h1>Contact Us</h1>
   <div id="f-l-name">
     <div id="div-fname">
   <label for="fname">First Name <span class="easy-span">*</span></label>
-<input  id ="fname" type="text" class="easy-inpt" >
+<input  id ="fname" type="text" class="easy-inpt" name = "name">
  <div class="error">This field is required</div>
 </div>
   <div id="div-lname">
@@ -43,7 +45,7 @@
   <label>I consent to being contacted by the team <span>*</span></label>
   <div class="error-check" id = "special">To submit this form , Please consent to being contacted </div>
 </div>
-<button  type="submit" onclick=" empty()" id="submit">Submit</button></div>
+<button   id="sub">Submit</button></div>
 </div>
 </form>
   <div class="attribution">
@@ -52,4 +54,5 @@
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>

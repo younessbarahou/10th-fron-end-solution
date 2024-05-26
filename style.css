@@ -20,8 +20,8 @@ html{
     font-size: 16px;
     scroll-behavior: smooth;
 }
-#main{
-    margin: 20px auto;
+#main:not(#top-box){
+    margin: 50px auto;
     border: 0px solid;
     border-radius: 8px;
     background-color: var(--white);
@@ -29,6 +29,7 @@ html{
     flex-direction: column;
     padding: 10px 30px;
     width: 60%;
+    position: relative;
 }
 input:not(input[type="radio"]){
     padding: 14px;
@@ -109,11 +110,10 @@ border: 1px solid var(--grey);
 border-radius: 5px;
 color: var(--darkgrey);
 }
-
 div span{
     color: var(--green);
 }
-#submit{
+#sub{
     padding: 14px 0px;
     border: none;
     border-radius: 8px;
@@ -122,13 +122,13 @@ div span{
     color: var(--white);
     margin-bottom: 18px;
 }
-#submit:hover{
+#sub:hover{
     background-color: var(--darkgrey);
     cursor: pointer;
     transition: 350ms;
 }
 /*  this part is responsible of error hiding/showing , it will be activated using javascript*/
-.error,.error-check,.error-mail{
+.error,.error-check,.error-mail,.error-radio{
     font-size: 10px;
     margin-top: 5px;
     color: var(--red);
